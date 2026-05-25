@@ -12,7 +12,7 @@ function MovieCard({ movie }) {
       <div className="movie-info">
         <h3>{movie.title}</h3>
 
-        <p>⭐ {movie.vote_average}</p>
+        <p>⭐ {movie.vote_average.toFixed(2)}</p>
 
         <Link to={`/movie/${movie.id}`}>
           <button>View Details</button>

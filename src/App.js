@@ -4,6 +4,7 @@ import Popular from './pages/Popular';
 import Toprated from './pages/Toprated';
 import Upcoming from './pages/Upcoming';
 import Search from './pages/Search';
+import MovieDetails from './pages/MovieDetails';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path='/top-rated' element={<Toprated />} />
             <Route path='/upcoming' element={<Upcoming />} />
             <Route path='/search' element={<Search />} />
+            <Route path="/movie/:id" element={<MovieDetails />} />
           </Routes>
         </div>
       </div>
