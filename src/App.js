@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './pages/Navbar';
-import Popular from './pages/Popular';
-import Toprated from './pages/Toprated';
-import Upcoming from './pages/Upcoming';
-import Search from './pages/Search';
-import MovieDetails from './pages/MovieDetails';
-import './App.css';
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import Navbar from './pages/Navbar'
+import Popular from './pages/Popular'
+import Toprated from './pages/Toprated'
+import Upcoming from './pages/Upcoming'
+import Search from './pages/Search'
+import MovieDetails from './pages/MovieDetails'
+import './App.css'
 
 function App() {
   return (
@@ -18,12 +18,12 @@ function App() {
             <Route path='/top-rated' element={<Toprated />} />
             <Route path='/upcoming' element={<Upcoming />} />
             <Route path='/search' element={<Search />} />
-            <Route path="/movie/:id" element={<MovieDetails />} />
+            <Route path='/movie/:id' element={<MovieDetails />} />
           </Routes>
         </div>
       </div>
     </BrowserRouter>
-  );
+  )
 }
 
-export default App;
+export default App
